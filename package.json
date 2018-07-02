@@ -1,0 +1,40 @@
+{
+	"name": "the-app-name",
+	"version": "0.1.0",
+	"main": "src/index.js",
+	"private": true,
+	"scripts": {
+		"start": "webpack-dev-server --content-base public --mode development --open --port 3000",
+		"build": "webpack --mode production",
+		"lint": "eslint .",
+		"precommit": "npm run lint",
+		"prepush": "npm run lint"
+	},
+	"dependencies": {
+		"prop-types": "^15.6.1",
+		"react": "^16.3.1",
+		"react-dom": "^16.3.1"
+	},
+	"devDependencies": {
+		"autoprefixer": "^8.6.4",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"css-loader": "^0.28.11",
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-plugin-import": "^2.10.0",
+		"eslint-plugin-jsx-a11y": "^6.0.3",
+		"eslint-plugin-react": "^7.7.0",
+		"file-loader": "^1.1.11",
+		"husky": "^0.14.3",
+		"node-sass": "^4.8.3",
+		"postcss-loader": "^2.1.5",
+		"sass-loader": "^7.0.3",
+		"style-loader": "^0.21.0",
+		"webpack": "^4.12.1",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.4"
+	}
+}
