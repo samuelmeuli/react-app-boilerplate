@@ -7,8 +7,8 @@
 		"start": "webpack-dev-server --content-base public --host 0.0.0.0 --mode development --open --port 3000",
 		"build": "webpack --mode production",
 		"lint": "eslint .",
-		"precommit": "npm run lint",
-		"prepush": "npm run lint"
+		"precommit": "yarn lint",
+		"prepush": "yarn lint"
 	},
 	"dependencies": {
 		"prop-types": "^15.6.1",

@@ -11,6 +11,11 @@ What's included:
 *My boilerplate for React **component libraries** can be found [here](https://github.com/samuelmeuli/react-library-boilerplate).*
 
 
+## Requirements
+
+You need to have Node.js and Yarn installed.
+
+
 ## Usage
 
 To use this boilerplate for creating your own application, execute the following commands (and replace `my-app` with the name of your application):
@@ -24,13 +29,13 @@ Clean up the files from this repository and install the dependencies:
 ```sh
 cd my-app
 rm -rf .git README.md
-npm install
+yarn install
 ```
 
 Execute the start script to bundle your application and start your development server:
 
 ```sh
-npm start
+yarn start
 ```
 
 Finally, open http://localhost:3000 to see your component in action.
