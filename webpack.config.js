@@ -24,12 +24,13 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(png|jpg|gif|svg)$/,
+				test: /\.(png|jpe?g|gif|svg)$/,
 				use: [
 					{
-						loader: 'file-loader',
+						loader: 'url-loader',
 						options: {
-							name: 'images/[hash].[ext]'
+							limit: 8192, // file-loader is fallback for files exceeding the limit
+							name: 'images/[hash].[ext]' // option is passed to file-loader
 						}
 					}
 				]
