@@ -29,8 +29,8 @@ module.exports = {
 					{
 						loader: 'url-loader',
 						options: {
-							limit: 8192, // file-loader is fallback for files exceeding the limit
-							name: 'images/[hash].[ext]' // option is passed to file-loader
+							limit: 8192, // Use file-loader for larger files
+							name: 'images/[hash].[ext]' // Option is passed to file-loader
 						}
 					}
 				]
